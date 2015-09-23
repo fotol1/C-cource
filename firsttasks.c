@@ -1,21 +1,23 @@
-
 #include <stdio.h>
 #include <math.h>
-int solution(a,b,c)
+int solution( double a, double b, double c)
 {
-        if (a == 0)
+    if (a == 0)
 	{
-		if (!(b * c))
+		if (!b * !c)
 			return 1;
-                if (b == 0 && c != 0)
-                        return 2;
-                if (b == 0 && c == 0)
-                        return 3;
-		if (!(b *  c))
+
+        if (b != 0 && c == 0)
+            return 3;
+
+		if (b *  c)
 			return 4;
+        return 2;
 	}
-	if (a * b != 0 && c == 0) 
-			return 5;
+
+	if (a * (!b * !c))
+			return 3;
+
 	return 6;
 }
 
@@ -24,7 +26,7 @@ int main()
 	double a, b, c,d;
 
 	scanf("%lg %lg %lg", &a, &b, &c);
-	
+
 	switch(solution(a,b,c))
 	{
 		case 1:
@@ -35,14 +37,13 @@ int main()
 			break;
 		case 3:
 			printf("0");
+			break;
 		case 4:
 			printf("%g", -c / b);
 			break;
-		case 5:
-			printf("0, %g", -b / a);
-			break;
+
 		default:
-		
+
 			d =  b * b - 4 * a * c;
 			if (d == 0)
 				printf("%g", -b / 2 / a);
@@ -50,11 +51,11 @@ int main()
 			{
 				d = sqrt(d);
 				printf("%g %g", (-b + d) / (2 * a), (-b - d) / (2 * a));
-			}	
+			}
 			if (d < 0)
 				printf("No");
 
-		
+
 	}
 return 0;
 	}
