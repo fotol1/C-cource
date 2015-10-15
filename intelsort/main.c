@@ -24,11 +24,15 @@ int main()
     int *massiv = NULL;
 
     massiv = (int*)malloc(numofel*sizeof(int));
+    printf("Now we are getting a random massiv\nWe have %d elements",numofel);
     getmassiv(massiv, numofel);
     printmassiv(massiv,numofel);
+    printf("Next, Let's sort it with 'Buble sort'");
 
     sortBuble(massiv,numofel);
-
+    printf("As you can see, unsorted massiv are saved");
+    printmassiv(massiv,numofel);
+    printf("Next, Let's sort it with 'Past sort'");
     sortPast(massiv,numofel);
 
     return 0;
@@ -74,10 +78,11 @@ void sortPast(const int * massiv, int sizeofmassiv)
 }
 void printmassiv(const int * willbeprint, int sizeofmassiv)
 {
+        printf("\n\n");
         int i = 0;
         for(i; i < sizeofmassiv; i++)
             printf("%d ", willbeprint[i]);
-        printf("\n");
+        printf("\n\n");
 
 
 
