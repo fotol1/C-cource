@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "sorts.h"
-const numofel = 20;
+
+
+const numofel = 30;
 
 int *savemassiv(int *massiv, int sizeofmassiv)
 {

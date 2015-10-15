@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>intelsort1 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>15-10-2015 at 13:16.00</u><br />
+Build ended on: <u>15-10-2015 at 13:16.02</u><p />
+<b>-------------- Build: Debug in intelsort1 (compiler: GNU GCC Compiler)---------------</b><br />
+mingw32-gcc.exe -Wall  -g     -c C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\main.c -o obj\Debug\main.o<br />
+mingw32-gcc.exe -Wall  -g     -c C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c -o obj\Debug\sorts.o<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\main.c:7:7: warning: type defaults to 'int' in declaration of 'numofel' [-Wimplicit-int]</font><br />
+ const numofel = 30;<br />
+       ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\main.c: In function 'savemassiv':<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\main.c:15:5: warning: statement with no effect [-Wunused-value]</font><br />
+     for(i; i &lt; sizeofmassiv; i++)<br />
+     ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\main.c:13:16: warning: unused variable 'j' [-Wunused-variable]</font><br />
+     int i = 0, j = 0;<br />
+                ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: In function 'sortBuble':<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:4:5: warning: implicit declaration of function 'savemassiv' [-Wimplicit-function-declaration]</font><br />
+     int *willbesorted = savemassiv(massiv,sizeofmassiv);<br />
+     ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:4:25: warning: initialization makes pointer from integer without a cast [enabled by default]</font><br />
+     int *willbesorted = savemassiv(massiv,sizeofmassiv);<br />
+                         ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:10:17: warning: implicit declaration of function 'myswap' [-Wimplicit-function-declaration]</font><br />
+                 myswap(&amp;willbesorted[i], &amp;willbesorted[j]);<br />
+                 ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:12:5: warning: implicit declaration of function 'printmassiv' [-Wimplicit-function-declaration]</font><br />
+     printmassiv(willbesorted,sizeofmassiv);<br />
+     ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:13:6: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]</font><br />
+      free(willbesorted);<br />
+      ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:13:6: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]</font><br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: In function 'sortPast':<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:18:25: warning: initialization makes pointer from integer without a cast [enabled by default]</font><br />
+     int *willbesorted = savemassiv(massiv,sizeofmassiv);<br />
+                         ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:21:5: warning: statement with no effect [-Wunused-value]</font><br />
+     for(i; i &lt; sizeofmassiv -1; i++)<br />
+     ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:38:5: warning: incompatible implicit declaration of built-in function 'free' [enabled by default]</font><br />
+     free(willbesorted);<br />
+     ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: At top level:<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:40:6: warning: conflicting types for 'printmassiv' [enabled by default]</font><br />
+ void printmassiv(const int * willbeprint, int sizeofmassiv)<br />
+      ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:12:5: note: previous implicit declaration of 'printmassiv' was here<br />
+     printmassiv(willbesorted,sizeofmassiv);<br />
+     ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: In function 'printmassiv':<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:42:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]</font><br />
+         printf("\n\n");<br />
+         ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:42:9: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]</font><br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:44:9: warning: statement with no effect [-Wunused-value]</font><br />
+         for(i; i &lt; sizeofmassiv; i++)<br />
+         ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: At top level:<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:52:6: warning: conflicting types for 'myswap' [enabled by default]</font><br />
+ void myswap(int* s1, int* s2)                             // checked<br />
+      ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:10:17: note: previous implicit declaration of 'myswap' was here<br />
+                 myswap(&amp;willbesorted[i], &amp;willbesorted[j]);<br />
+                 ^<br />
+C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c: In function 'getmassiv':<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:65:5: warning: statement with no effect [-Wunused-value]</font><br />
+     for(i; i &lt; sizeofmassiv; i++)<br />
+     ^<br />
+<font color="#0000ff">C:\Users\олежа\Documents\GitHub\fotol1\intelsort1\sorts.c:67:9: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]</font><br />
+         willbeget[i] = rand() % 125;<br />
+         ^<br />
+mingw32-g++.exe  -o bin\Debug\intelsort1.exe obj\Debug\main.o obj\Debug\sorts.o<br />
+Output size is 34,17 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 1 seconds)</font><br />
+<font color="#0000ff">0 errors, 19 warnings (0 minutes, 1 seconds)</font><br />
+</tt>
+</body>
+</html>

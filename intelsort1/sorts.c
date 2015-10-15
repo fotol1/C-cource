@@ -1,3 +1,4 @@
+
 void sortBuble( int * massiv, int sizeofmassiv)
 {
     int *willbesorted = savemassiv(massiv,sizeofmassiv);
@@ -63,11 +64,7 @@ void getmassiv(int * willbeget, int sizeofmassiv)       // checked
 
     for(i; i < sizeofmassiv; i++)
     {
-
-
         willbeget[i] = rand() % 125;
 
     }
-
-
 }

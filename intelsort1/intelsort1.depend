@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1444903419 source:c:\users\олежа\documents\github\fotol1\intelsort1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"sorts.h"
+
+1444903482 c:\users\олежа\documents\github\fotol1\intelsort1\sorts.h
+
+1444903419 source:c:\users\олежа\documents\github\fotol1\intelsort1\sorts.c
+
