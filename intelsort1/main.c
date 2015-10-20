@@ -4,7 +4,7 @@
 #include "sorts.h"
 
 
-const numofel = 30;
+
 
 int *savemassiv(int *massiv, int sizeofmassiv)
 {
@@ -19,9 +19,20 @@ int *savemassiv(int *massiv, int sizeofmassiv)
 }
 int main()
 {
+    int numofel = 30;
     int *massiv = NULL;
 
+   do
+    {
     massiv = (int*)malloc(numofel*sizeof(int));
+    if(massiv == NULL) 
+    {
+        printf("We're sorry but your device can't create so large massive\n Please, change number of elements\n");
+        scanf("%d",numofel);
+        printf("\n");
+    }
+    } while(massiv == NULL);
+    
     printf("Now we are getting a random massiv\nWe have %d elements",numofel);
     getmassiv(massiv, numofel);
     printmassiv(massiv,numofel);
