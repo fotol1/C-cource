@@ -13,24 +13,26 @@ int *savemassiv(int *massiv, int sizeofmassiv)
     int i = 0, j = 0;
 
     for(i; i < sizeofmassiv; i++)
-        willbesorted[i] = massiv[i];
+         willbesorted[i] = massiv[i];
     return willbesorted;
 
 }
 int main()
 {
-    int numofel = 30;
+    int numofel = 0;
     int *massiv = NULL;
-
-   do
+    printf("How many elemets do you want to sort?\n");
+    scanf("%d",&numofel);
+    
+    do
     {
-    massiv = (int*)malloc(numofel*sizeof(int));
-    if(massiv == NULL) 
-    {
-        printf("We're sorry but your device can't create so large massive\n Please, change number of elements\n");
-        scanf("%d",numofel);
-        printf("\n");
-    }
+         massiv = (int*)malloc(numofel*sizeof(int));
+         if(massiv == NULL) 
+         {
+             printf("We're sorry but your device can't create so large massive\n Please, change number of elements\n");
+             scanf("%d",numofel);
+             printf("\n");
+         }
     } while(massiv == NULL);
     
     printf("Now we are getting a random massiv\nWe have %d elements",numofel);
