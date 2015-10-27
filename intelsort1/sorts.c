@@ -10,7 +10,7 @@ void sortBuble( int * massiv, int sizeofmassiv)
                 myswap(&willbesorted[i], &willbesorted[j]);
 
     printmassiv(willbesorted,sizeofmassiv);
-     free(willbesorted);
+    free(willbesorted);
 
 }
 void sortPast(const int * massiv, int sizeofmassiv)
@@ -29,11 +29,9 @@ void sortPast(const int * massiv, int sizeofmassiv)
                     min = willbesorted[j];
                 }
         }
-      myswap(&willbesorted[i], &willbesorted[num_of_min]);
+        myswap(&willbesorted[i], &willbesorted[num_of_min]);
     }
     printmassiv(willbesorted,sizeofmassiv);
-
-
 
     free(willbesorted);
 }
@@ -65,6 +63,5 @@ void getmassiv(int * willbeget, int sizeofmassiv)       // checked
     for(i; i < sizeofmassiv; i++)
     {
         willbeget[i] = rand() % 125;
-
     }
 }
